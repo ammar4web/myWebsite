@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap");
+html {
+  background-color: #4E4F51;
+}
+body {
+  font-family: "El Messiri", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  direction: ltr;
+  /* max-width: 1200px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main > section {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Start Header */
+#header {
+  background-color: #353637;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-bottom: 3px solid #32a0c2;
+  /* padding: 0px 120px; */
+  padding: 0px 65px;
+}
+
+#branding h1 {
+  font-size: 28px;
+}
+
+nav > ul {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* padding: 0; */
+  list-style-type: none;
+}
+
+#header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav {
+  margin-top: 15px;
+}
+
+nav > ul > li {
+  float: right;
+  /* margin-left: 15px; */
+  margin-right: 15px;
+}
+
+li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#header .highlight,
+#header .currrent a {
+  color: #32a0c2;
+}
+
+.highlight {
+margin-right: -9px;
+}
+/* End Header */
+.showcase {
+  width: 100%;
+  min-height: calc(100vh - 93.48px);
+  background-image: url(../img/clement-helardot-95YRwf6CNw8-unsplash.jpg);
+  background-size: cover;
+  background-position: left top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.showcase .my-content {
+  width: 80%;
+}
+
+.showcase .my-row {
+  /* margin-bottom: 10%; */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.5em;
+  background-color: #21252940;
+  color: #f8f9fa;
+  text-align: center;
+}
+
+.showcase .my-row h1 {
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+.showcase .my-row p {
+  font-size: 1.2em !important;
+  padding: 20px 0;
+  background-color: #e41b1705;
+  color: #f8f9fa;
+}
+/* Start showcase */
+
+/* End showcase */
+
+
+
+/* CV */
+.cv {
+  display: -ms-grid;
+  display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: "asid asid asid main main main main main main main main main";
+}
+
+.cv aside {
+  background-color: #151a2d;
+  grid-area: asid;
+}
+
+.cv section {
+  grid-area: main;
+}
+
+.side-content {
+  padding: 20px 30px 50px;
+  color: #fff;
+}
+
+.side-content > div {
+  margin-bottom: 60px;
+}
+
+.side-content h3 {
+  position: relative;
+  margin-bottom: 40px;
+}
+.side-content h3::before {
+  content: "";
+  width: 20px;
+  height: 40px;
+  background-color: #32a0c2;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  border-radius: 0 150px 150px 0;
+}
+
+.side-content h3::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #32a0c2;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+}
+.side-content ul {
+  padding-left: 0;
+}
+.side-content ul li {
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+}
+.side-content ul li:last-child {
+  margin-bottom: 0;
+}
+
+.side-content ul li .icon {
+  width: 20px;
+  height: 20px;
+  background-color: #32a0c2;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+.side-content ul li .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.side-content .personal .data {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-content ul li .name {
+  width: 30%;
+  position: relative;
+  margin-right: 30px;
+}
+
+.side-content ul li .name::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 12px;
+  background-color: #32a0c2;
+  top: 8px;
+  left: -15px;
+  border-radius: 0 150px 150px 0;
+}
+.side-content ul li .progress {
+  width: 40%;
+  margin: 0 5px;
+  height: 5px;
+  background-color: #fff;
+  position: relative;
+}
+.side-content ul li .per {
+  width: 10%;
+  margin-left: 10px;
+}
+.side-content ul li .progress span {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #32a0c2;
+}
+
+.cv-main-content {
+  padding: 30px;
+  color: #151a2d;
+}
+.cv-main-content h1 {
+  color: #32a0c2;
+  margin-bottom: 20px;
+  height: fit-content;
+}
+.cv-main-content h4 {
+  color: 32a0c2;
+  margin-bottom: 100px;
+  border-bottom: 1px solid #32a0c2;
+}
+.cv-main-content h2 {
+  color: #091952;
+  border-bottom: 1px solid #091952;
+  width: fit-content;
+
+}
+.ex {
+  margin-bottom: 75px;
+}
+
+.cv-main-content h3 {
+  color: #32a0c2;
+  display: flex;
+  flex-direction: column;
+}
+.cv-main-content h3 span{
+  font-size: 0.7em !important;
+}
+
+/*# sourceMappingURL=Ammar.css.map */
+/* CV */
+
+@media (max-width: 575px) /* Start Header */ {
+  #header {
+    flex-direction: column;
+  }
+
+  #branding h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    margin-bottom: 15px;
+  }
+
+  nav > ul {
+    padding: 0;
+  }
+
+  nav > ul > li {
+    margin-right: 0px;
+    margin-left: 15px;
+  }
+  /* End Header */
+
+  .cv {
+        grid-template-areas: "asid asid asid asid asid asid asid asid asid asid asid asid";
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .showcase {
+    min-height: calc(100vh - 93.48px);
+  }
+  .showcase .my-row h1 {
+    font-size: 1.6em !important;
+  }
+
+  .showcase .my-row p {
+    font-size: 0.8em !important;
+  }
+
+
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .showcase {
+    min-height: calc(100vh - 93.48px);
+  }
+
+  .showcase .my-row h1 {
+    font-size: 1.2em !important;
+  }
+
+  .showcase .my-row p {
+    font-size: 0.8em !important;
+  }
+
+  .cv {
+    grid-template-areas: "asid asid asid asid main main main main main main main main ";
+}
+}
+
+@media (max-width: 576px) {
+  .showcase {
+    min-height: calc(100vh - 154.169px);
+  }
+
+  .showcase .my-row h1 {
+    font-size: 0.8em !important;
+  }
+
+  .showcase .my-row p {
+    font-size: 0.8em !important;
+  }
+}
