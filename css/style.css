@@ -308,7 +308,9 @@ margin-right: -9px;
   /* End Header */
 
   .cv {
-        grid-template-areas: "asid asid asid asid asid asid asid asid asid asid asid asid";
+    display: flex;
+    flex-direction: column;
+        /* grid-template-areas: "asid asid asid asid asid asid asid asid asid asid asid asid", "main main main main main main main main main main main main"; */
   }
 }
 
